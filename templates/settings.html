@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+{% block body %}
+        <!-- Pageloader -->
+        <div class="pageloader is-theme"></div>
+        <div class="infraloader is-active"></div>
+        <div class="dark-wrapper">
+            <!-- Landing page Hero -->
+            <section class="hero is-fullheight is-transparent">
+                <div class="hero-head">
+
+                    <!-- Cloned navbar -->
+                    <!-- Cloned navbar that comes in on scroll -->
+                    <nav id="navbar-clone" class="navbar is-fixed is-dark">
+                        <div class="container">
+                            <!-- Brand -->
+                            <div class="navbar-brand">
+                                <a href="/" class="navbar-item">
+                                    <img class="rotating" src="../static/images/logo/krypton-gradient.svg" alt="">
+                                    <span class="brand-name">SongSplit</span>
+                                </a>
+                                <!-- Responsive toggle -->
+                                <span class="navbar-burger burger" data-target="cloneNavbarMenu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </div>
+                            <!-- Menu -->
+                            <div id="navbar-menu-id" class="navbar-menu">
+                              <div class="navbar-start">
+                              </div>
+                              <div class="navbar-end">
+                                <div class="navbar-item">
+                                  <div class="field is-grouped">
+                                    <p class="control">
+                                      <a href="/logout" class="button is-primary is-outlined">
+                                        <span>Logout</span>
+                                      </a>
+                                    </p>
+                                    <p class="control">
+                                      <a href="/settings" class="button is-primary is-outlined">
+                                        <span id="cog" class="icon">
+                                          <i class="fa fa fa-cog"></i>
+                                        </span>
+                                      </a>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                        </div>
+                    </nav>
+                    <!-- /Cloned navbar -->
+                    <!-- Static navbar -->
+                    <!-- Static navbar -->
+                    <nav class="navbar is-light">
+                        <div class="container">
+                            <!-- Brand -->
+                            <div class="navbar-brand">
+                                <a href="/" class="navbar-item">
+                                    <img class="rotating" src="../static/images/logo/krypton.svg" alt="">
+                                    <span class="brand-name">SongSplit</span>
+                                </a>
+                                <!-- Responsive toggle -->
+                                <span class="navbar-burger burger" data-target="navbarMenu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </div>
+                            <!-- Menu -->
+                            <div id="navbar-menu-id" class="navbar-menu">
+                              <div class="navbar-start">
+                              </div>
+                              <div class="navbar-end">
+                                <div class="navbar-item">
+                                  <div class="field is-grouped">
+                                    <p class="control">
+                                      <a href="/logout" class="button is-primary is-outlined">
+                                        <span>Logout</span>
+                                      </a>
+                                    </p>
+                                    <p class="control">
+                                      <a href="/settings" class="button is-primary is-outlined">
+                                        <span id="cog" class="icon">
+                                          <i class="fa fa fa-cog"></i>
+                                        </span>
+                                      </a>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- /Static navbar -->
+                </div>
+
+                <!-- Animated particles -->
+                <div id="particles-js"></div>
+
+                <!-- Hero Image and Title -->
+                <div class="hero-body">
+                  <div class="column is-half is-offset-one-quarter has-text-centered">
+                    <div id="settings" class="settings-box">
+                      <div class="settings-area">
+                        <h1 class="title">Settings</h1>
+                        <div class="field">
+                          <p class="control has-icons-left">
+                            <input id="settings-user" class="input is-success" type="text" placeholder="{{user.username}}" readonly="readonly">
+                            <span class="icon is-small is-left">
+                              <i class="fa fa-user"></i>
+                            </span>
+                          </p>
+                        </div>
+                        <div class="field">
+                          <p class="control has-icons-left">
+                            <input id="settings-mail" class="input is-success" type="text" placeholder="{{user.email}}">
+                            <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                            </span>
+                          </p>
+                        </div>
+                        <div class="field">
+                          <p class="control has-icons-left">
+                            <input id="settings-pass" class="input" type="password" placeholder="&#x2022&#x2022&#x2022&#x2022&#x2022">
+                            <span class="icon is-small is-left">
+                              <i class="fa fa-lock"></i>
+                            </span>
+                          </p>
+                        </div>
+                        <br>
+                        <a id="save" class="form-button button is-primary is-inverted is-outlined">
+                          <span>Save</span>
+                        </a>
+                        <a href="/" class="form-button button is-primary is-inverted is-outlined">
+                          <span>Exit</span>
+                        </a>
+                        <br>
+                        <br>
+                        <i><a id="feedback" class="feedback"></a></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </section>
+            <footer class="krypton-footer">
+
+                    <!-- Copyright -->
+                    <p class="k-copyright">© 2019 | SongSplit. All Rights Reserved</p>
+                    <br>
+                    <!-- Made by -->
+                    <p class="coded-by">Designed and Coded by <a href="/" target="_blank">Ansa</a></p>
+
+            </footer>        <!-- Core js -->
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}

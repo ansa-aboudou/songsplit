@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+{% block body %}
+        <!-- Pageloader -->
+        <div class="pageloader is-theme"></div>
+        <div class="infraloader is-active"></div>
+        <div class="dark-wrapper">
+            <!-- Landing page Hero -->
+            <section class="hero is-fullheight is-transparent">
+                <div class="hero-head">
+
+                    <!-- Cloned navbar -->
+                    <!-- Cloned navbar that comes in on scroll -->
+                    <nav id="navbar-clone" class="navbar is-fixed is-dark">
+                        <div class="container">
+                            <!-- Brand -->
+                            <div class="navbar-brand">
+                                <a href="/" class="navbar-item">
+                                    <img class="rotating" src="../static/images/logo/krypton-gradient.svg" alt="">
+                                    <span class="brand-name">SongSplit</span>
+                                </a>
+                                <!-- Responsive toggle -->
+                                <span class="navbar-burger burger" data-target="cloneNavbarMenu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </div>
+                            <!-- Menu -->
+                            <div id="navbar-menu-id" class="navbar-menu">
+                              <div class="navbar-start">
+                              </div>
+                              <div class="navbar-end">
+                                <div class="navbar-item">
+                                  <div class="field is-grouped">
+                                    <p class="control">
+                                      <a href="/logout" class="button is-primary is-outlined">
+                                        <span>Logout</span>
+                                      </a>
+                                    </p>
+                                    <p class="control">
+                                      <a href="/settings" class="button is-primary is-outlined">
+                                        <span id="cog" class="icon">
+                                          <i class="fa fa fa-cog"></i>
+                                        </span>
+                                      </a>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                        </div>
+                    </nav>
+                    <!-- /Cloned navbar -->
+                    <!-- Static navbar -->
+                    <!-- Static navbar -->
+                    <nav class="navbar is-light">
+                        <div class="container">
+                            <!-- Brand -->
+                            <div class="navbar-brand">
+                                <a href="/" class="navbar-item">
+                                    <img class="rotating" src="../static/images/logo/krypton.svg" alt="">
+                                    <span class="brand-name">SongSplit</span>
+                                </a>
+                                <!-- Responsive toggle -->
+                                <span class="navbar-burger burger" data-target="navbarMenu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </div>
+                            <!-- Menu -->
+                            <div id="navbar-menu-id" class="navbar-menu">
+                              <div class="navbar-start">
+                              </div>
+                              <div class="navbar-end">
+                                <div class="navbar-item">
+                                  <div class="field is-grouped">
+                                    <p class="control">
+                                      <a href="/logout" class="button is-primary is-outlined">
+                                        <span>Logout</span>
+                                      </a>
+                                    </p>
+                                    <p class="control">
+                                      <a href="/settings" class="button is-primary is-outlined">
+                                        <span id="cog" class="icon">
+                                          <i class="fa fa fa-cog"></i>
+                                        </span>
+                                      </a>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- /Static navbar -->
+                </div>
+
+                <!-- Animated particles -->
+                <div id="particles-js"></div>
+
+                <!-- Hero Image and Title -->
+                <div class="hero-body">
+                    <div class="container">
+                        <div class="columns is-vcentered">
+
+                            <!-- Landing page Title -->
+                            <div class="column is-5 landing-caption">
+                                <h1 class="title is-1 is-light is-semibold is-spaced main-title">Split your song</h1>
+                                <h2 class="subtitle is-6 is-light is-thin">
+                                    A simple way to separate the vocals from the beat of a song.
+                                </h2>
+                                <!-- CTA -->
+                                <p>
+                                    <a href="/" class="button k-button k-primary raised has-gradient is-fat is-bold">
+                                        <span class="text">Home page</span>
+                                        <span class="front-gradient"></span>
+                                    </a>
+                                </p>
+
+                            </div>
+                            <!-- Hero image -->
+                            <div class="column is-7">
+                              <form action="/splitUpload" id="my-awesome-dropzone" method="post" class="dropzone" enctype="multipart/form-data">
+                                <div class="dropzone-previews"></div> <!-- this is were the previews should be shown. -->
+                                <button id="btnsplit" class="button is-primary" type="submit">Split it!</button>
+                              </form>
+                              <div class="columns is-mobile is-centered">
+                                <div class="column is-half">
+                                    <div id="results" class="container" style="display:none">
+                                        <audio id="audio_vocal" controls="">
+                                            <source id="src_vocal" src="">
+                                        </audio>
+                                        <br>
+                                        <audio id="audio_beat" controls="">
+                                            <source id="src_beat" src="">
+                                        </audio>
+                                        <br>
+                                        <br>
+
+                                        <a id="dwl_vocal" href="" download target="_blank" class="button is-info is-rounded" >Download vocal</a>
+                                        <br>
+                                        <br>
+                                        <a id="dwl_beat" href="" download target="_blank" class="button is-info is-rounded" >Download accompaniment</a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- /Landing page Hero -->
+
+        <footer class="krypton-footer">
+
+                <!-- Copyright -->
+                <p class="k-copyright">© 2019 | SongSplit. All Rights Reserved</p>
+                <br>
+                <!-- Made by -->
+                <p class="coded-by">Designed and Coded by <a href="/" target="_blank">Ansa</a></p>
+                <p class="coded-by"><a href="/logout">Logout</a> // <a href="/settings">Settings</a></p>
+        </footer>
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}

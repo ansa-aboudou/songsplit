@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+{% block body %}
+        <!-- Pageloader -->
+        <div class="pageloader is-theme"></div>
+        <div class="infraloader is-active"></div>
+        <div class="dark-wrapper">
+            <!-- Landing page Hero -->
+            <section class="hero is-fullheight is-transparent">
+                <div class="hero-head">
+
+                    <!-- Cloned navbar -->
+                    <!-- Cloned navbar that comes in on scroll -->
+                    <nav id="navbar-clone" class="navbar is-fixed is-dark">
+                        <div class="container">
+                            <!-- Brand -->
+                            <div class="navbar-brand">
+                                <a href="/" class="navbar-item">
+                                    <img class="rotating" src="../static/images/logo/krypton-gradient.svg" alt="">
+                                    <span class="brand-name">SongSplit</span>
+                                </a>
+                                <!-- Responsive toggle -->
+                                <span class="navbar-burger burger" data-target="cloneNavbarMenu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </div>
+                            <!-- Menu -->
+                            <div id="navbar-menu-id" class="navbar-menu">
+                              <div class="navbar-start">
+                              </div>
+                              <div class="navbar-end">
+                                <div class="navbar-item is-nav-link">
+                                    <a href="/home" class="button k-button k-primary raised has-gradient slanted">
+                                        <span class="text">Try it now</span>
+                                        <span class="front-gradient"></span>
+                                    </a>
+                                </div>
+                              </div>
+                            </div>
+
+                        </div>
+                    </nav>
+                    <!-- /Cloned navbar -->
+                    <!-- Static navbar -->
+                    <!-- Static navbar -->
+                    <nav class="navbar is-light">
+                        <div class="container">
+                            <!-- Brand -->
+                            <div class="navbar-brand">
+                                <a href="/" class="navbar-item">
+                                    <img class="rotating" src="../static/images/logo/krypton.svg" alt="">
+                                    <span class="brand-name">SongSplit</span>
+                                </a>
+                                <!-- Responsive toggle -->
+                                <span class="navbar-burger burger" data-target="navbarMenu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </div>
+                            <!-- Menu -->
+                            <div id="navbar-menu-id" class="navbar-menu">
+                              <div class="navbar-start">
+                              </div>
+                              <div class="navbar-end">
+                                <div class="navbar-item is-nav-link">
+                                    <a href="/home" class="button k-button k-primary raised has-gradient slanted">
+                                        <span class="text">Try it now</span>
+                                        <span class="front-gradient"></span>
+                                    </a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- /Static navbar -->
+                </div>
+
+                <!-- Animated particles -->
+                <div id="particles-js"></div>
+
+                <!-- Hero Image and Title -->
+                <div class="hero-body">
+                    <div class="container">
+                        <div class="columns is-vcentered">
+
+                            <!-- Landing page Title -->
+                            <div class="column is-5 landing-caption">
+                                <h1 class="title is-1 is-light is-semibold is-spaced main-title">Split your song</h1>
+                                <h2 class="subtitle is-6 is-light is-thin">
+                                    A simple way to separate the vocals from the beat of a song.
+                                </h2>
+                                <!-- CTA -->
+                                <p>
+                                    <a href="/home" class="button k-button k-primary raised has-gradient is-fat is-bold">
+                                        <span class="text">Try it now</span>
+                                        <span class="front-gradient"></span>
+                                    </a>
+                                </p>
+
+                            </div>
+                            <!-- Hero image -->
+                            <div class="column is-7">
+                              <figure class="image">
+                                  <img src="../static/images/illustrations/blockchain-blocks.svg" alt="">
+                              </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- /Landing page Hero -->
+
+            <!-- Icon Features section -->
+            <section id="start" class="section is-transparent is-relative">
+                <!-- Container -->
+                <div class="container">
+
+                    <div class="has-text-centered">
+                        <a class="button k-button k-secondary raised has-gradient is-fat is-bold rounded">
+                            <span class="text">Get access for only 1$</span>
+                            <span class="front-gradient"></span>
+                        </a>
+
+                        <div class="buy-title">We Accept visa mastercard & american express</div>
+
+                    </div>
+
+                    <!-- Content wrapper -->
+                    <div class="content-wrapper is-medium">
+                        <div class="columns is-vcentered">
+                            <!-- Feature -->
+                            <div class="column is-4">
+                                <div class="feature">
+                                    <img src="../static/images/icons/chained.svg" alt="" data-aos="fade-up" data-aos-delay="100" data-aos-offset="200" data-aos-easing="ease-out-quart">
+                                    <h4 class="title is-6 is-tight is-light">Pretrained models</h4>
+                                    <p>We use pretrained models written in Python with Tensorflow</p>
+                                </div>
+                            </div>
+                            <!-- Feature -->
+                            <div class="column is-4">
+                                <div class="feature">
+                                    <img src="../static/images/icons/stacked.svg" alt="" data-aos="fade-up" data-aos-delay="300" data-aos-offset="200" data-aos-easing="ease-out-quart">
+                                    <h4 class="title is-6 is-tight is-light">Incredible performances</h4>
+                                    <p>Separation of audio file is very fast</p>
+                                </div>
+                            </div>
+                            <!-- Feature -->
+                            <div class="column is-4">
+                                <div class="feature">
+                                    <img src="../static/images/icons/compact.svg" alt="" data-aos="fade-up" data-aos-delay="500" data-aos-offset="200" data-aos-easing="ease-out-quart">
+                                    <h4 class="title is-6 is-tight is-light">Simple to use</h4>
+                                    <p>You just have to drag and drop your song</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content wrapper -->
+                </div>
+                <!-- /Container -->
+            </section>
+            <!-- /Icon Features section -->
+
+            <!-- Side Features section -->
+            <section id="big-gradient" class="section is-transparent">
+                <!-- Container -->
+                <div class="container">
+                    <!-- Divider -->
+                    <div class="divider is-centered"></div>
+                    <!-- Title & subtitle -->
+                    <h2 class="title is-light is-semibold has-text-centered is-spaced">Your dream finally came true</h2>
+                    <h4 class="subtitle is-6 is-light has-text-centered is-compact">If you are a music data recovery investigator or a music hacker and you want to use SongSplit to create something cool, this software is designed for you.</h4>
+                <div/>
+            </section>
+        <footer class="krypton-footer">
+
+                <!-- Copyright -->
+                <p class="k-copyright">© 2019 | SongSplit. All Rights Reserved</p>
+                <br>
+                <!-- Made by -->
+                <p class="coded-by">Designed and Coded by <a href="/" target="_blank">Ansa</a></p>
+
+        </footer>
+{% endblock %}
+{% block scripts %}
+
+{% endblock %}
