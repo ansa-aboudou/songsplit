@@ -10,6 +10,8 @@ Login and purchase (Fake functionnality with Stripe : https://stripe.com/docs/te
 <hr>
 <p align="center"><img src="https://raw.githubusercontent.com/ansa-aboudou/songsplit/master/media/home.jpg"><p>
 <hr>
+<p align="center"><img src="https://raw.githubusercontent.com/ansa-aboudou/songsplit/master/media/results.jpg"><p>
+<hr>
 <p align="center"><img src="https://raw.githubusercontent.com/ansa-aboudou/songsplit/master/media/landing_mobile.jpg"><p>
 <hr>
 <p align="center"><img src="https://raw.githubusercontent.com/ansa-aboudou/songsplit/master/media/home_mobile.jpg"><p>
